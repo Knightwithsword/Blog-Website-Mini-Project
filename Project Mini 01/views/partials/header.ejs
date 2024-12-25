@@ -1,17 +1,36 @@
 <header class="header">
-  <a href="/" class="header__logo">NodeJs</a>
+  <a href="/" class="header__logo">EdHelp</a>
 
   <nav class="header__nav">
     <ul>
       <li>
         <a href="/" class="<%= isActiveRoute('/', currentRoute) %>">Home</a>
       </li>
+
+      <li>
+        <a href="/createPost" class="<%= isActiveRoute('/createPost', currentRoute) %>">Write</a>
+      </li>
+
       <li>
         <a href="/about" class="<%= isActiveRoute('/about', currentRoute) %>">About</a>
       </li>
+
       <li>
         <a href="/contact" class="<%= isActiveRoute('/contact', currentRoute) %>">Contact</a>
       </li>
+
+      <li>
+        <a href="/login" class="<%= isActiveRoute('/login', currentRoute) %>">Sign In</a>
+      </li>
+
+      <li>
+        <a href="/logout" class="<%= isActiveRoute('/logout', currentRoute) %>">Sign Out</a>
+      </li>
+
+      <li>
+        <a href="/register" class="<%= isActiveRoute('/register', currentRoute) %>">Register</a>
+      </li>
+    
     </ul>
 
   </nav>
